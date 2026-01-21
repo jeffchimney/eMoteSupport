@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <title>eMote Support</title>
@@ -8,7 +9,7 @@
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text",
-                   "Helvetica Neue", Helvetica, Arial, sans-serif;
+        "Helvetica Neue", Helvetica, Arial, sans-serif;
       background: linear-gradient(to bottom, #fafafa 0%, #f5f5f7 100%);
       color: #1d1d1f;
       margin: 0;
@@ -118,6 +119,27 @@
       opacity: 0.7;
     }
 
+    .support-section {
+      margin-top: 32px;
+    }
+
+    .support-link {
+      display: inline-block;
+      padding: 12px 24px;
+      background: #ff5e5b;
+      color: white;
+      border-radius: 12px;
+      font-size: 17px;
+      font-weight: 500;
+      transition: background 0.2s, transform 0.2s;
+    }
+
+    .support-link:hover {
+      background: #e54542;
+      opacity: 1;
+      transform: scale(1.02);
+    }
+
     footer {
       margin-top: 48px;
       font-size: 13px;
@@ -128,7 +150,9 @@
 
 <body>
   <div class="container">
-    <img src="icon.png" alt="eMote App Icon" class="icon" />
+    <a href="https://apps.apple.com/ca/app/emote/id6757416135">
+      <img src="icon.png" alt="eMote App Icon" class="icon" />
+    </a>
 
     <h1>eMote Support</h1>
 
@@ -137,15 +161,9 @@
     </p>
 
     <div class="notice">
-      <strong>Kindle note:</strong><br />
-      eMote may not show as a Bluetooth device for Kindles.
-      I’m investigating this issue and hope to have a fix in soon.
-      Stay tuned!
+      <strong>Note:</strong><br />
+      eMote does not work with Kindles at this time as they do not support Bluetooth HID remotes.
     </div>
-
-    <p class="intro">
-      Thanks for using eMote! Whether you're reading in bed, exercising on a stationary bike or treadmill, or simply enjoying a good book, eMote keeps the pages turning without breaking your flow.
-    </p>
 
     <div class="privacy-section">
       <h2>Your Privacy</h2>
@@ -169,9 +187,14 @@
       </div>
     </div>
 
+    <div class="support-section">
+      <a href="https://ko-fi.com/jeffchimney" class="support-link">☕ Support Development</a>
+    </div>
+
     <footer>
       Made with care © 2026 eMote
     </footer>
   </div>
 </body>
+
 </html>
